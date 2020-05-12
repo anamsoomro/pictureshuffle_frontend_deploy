@@ -1,0 +1,203 @@
+body {
+  font-family: 'Helvetica Neue', Helvetica, sans-serif;
+  font-size: 15px;
+  background: #ffffff;
+  font-weight: 300;
+  margin: 0;
+}
+
+/* for by in corner */
+h4 {
+  position:absolute;
+  bottom:0;
+  right:0;
+  font-weight: 300;
+  margin-right: 1.33em;
+}
+
+/* for game images */
+.gallery {
+   height: 120px;
+   display: inline-block;
+}
+
+.user-bar {
+  background-color: #333;
+  height: 46px;
+}
+
+.main-menu {
+  background-color: rgb(88, 88, 88);
+}
+
+.sub-menu {
+  background-color: #aaafb4;
+  padding: 0;
+  border: 0;
+  position: fixed;
+  overflow: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  height: 120px;
+  width: 100%;
+}
+
+.sub-menu::-webkit-scrollbar {
+  display: none;
+}
+
+.show-panel {
+  margin-top: 120px;
+  display: grid;
+  height: 300px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 10px;
+  
+}
+
+.game-controls {
+  background-color: #e0e1e2;
+  /* padding: 16px; */
+}
+
+.game-board { 
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+/* for game controls */
+p {
+  font-weight: 300; 
+  padding: 14px 16px; 
+  margin: 0;
+  font-size: 30px;
+}
+
+p.hoverMeBefore:hover {
+  background-color: #333;
+  color: white;
+}
+p.hoverMeDuring { 
+  display: none;
+}
+p.hoverMeDuring:hover{
+  background-color: #333;
+  color: white;
+}
+
+table.leaderBoard, td.leaderBoard, th.leaderBoard {  
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+
+table.leaderBoard {
+  border-collapse: collapse;
+  width: 50%;
+  font-weight: 300;
+  margin-left:auto; 
+  margin-right:auto;
+
+}
+
+th.leaderBoard, td.leaderBoard {
+  padding: 15px;
+}
+
+th.leaderBoard{
+  background-color: #aaafb4;
+  font-size: 25px;
+  font-weight: 300;
+}
+
+table.game-board{ 
+  margin-left: auto; 
+  margin-right: auto;
+}
+
+/* for picture shuffle title */
+div.title {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  font-size: 60px;
+  text-align: center;
+} 
+
+span { 
+   padding: 10px; 
+}
+
+/* for main/sub menu and user bar */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+ul.main-menu { 
+  background-color: rgb(71, 71, 71);
+}
+
+li {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li.hoverMe:hover:not(.active) {
+  background-color: #111;
+}
+
+input[type="button" i], input[type="submit" i], input[type="reset" i] {
+  all: unset;
+}
+
+/* for game tiles */
+.tile1, .tile2, .tile3, .tile4, .tile5, .tile6, .tile7, .tile8, .blank {
+  width: 160px;
+  height: 160px;
+}
+
+.tile1 {
+  background-position: left top;
+}
+  
+.tile2 {
+  background-position: center top;
+}
+
+.tile3 {
+  background-position: right top;
+}
+
+.tile4 {
+background-position: left center;
+}
+
+.tile5 {
+  background-position: center center;
+}
+ 
+.tile6 {
+  background-position: right center;
+}
+   
+.tile7 {
+  background-position: left bottom;
+}
+   
+.tile8 {
+  background-position: center bottom;
+}
+    
+.blank {
+  background: white;
+}
+    
