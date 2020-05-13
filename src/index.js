@@ -1,6 +1,12 @@
-  const USERS_URL = "http://localhost:3000/users"
-  const IMAGES_URL = "http://localhost:3000/images"
-  const GAMES_URL = "http://localhost:3000/games"
+  // const USERS_URL = "http://localhost:3000/users"
+  // const IMAGES_URL = "http://localhost:3000/images"
+  // const GAMES_URL = "http://localhost:3000/games"
+
+  const USERS_URL = "https://pictureshuffle-backend.herokuapp.com/users"
+  const IMAGES_URL = "https://pictureshuffle-backend.herokuapp.com/images"
+  const GAMES_URL = "https://pictureshuffle-backend.herokuapp.com/games"
+
+
   const form = document.querySelector("#login")
   const galleryLi = document.querySelector("#gallery")
   const leaderBoardLi = document.querySelector("#leaderBoard")
